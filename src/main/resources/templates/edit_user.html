@@ -32,7 +32,7 @@
                         <td th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}">Surname Error</td>
                     </tr>
                     <tr>
-                        <td>Birthday (mm/dd/yyyy):</td>
+                        <td>Birthday:</td>
                         <td><input type="date" th:field="*{dob}" min="1900-01-01" max="2022.01.01" pattern="[0-9]+[0-9]+/+[0-9]+[0-9]+/+[1-9]+[0-9]+[0-9]+[0-9]" required="true"/></td>
                         <td th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}">Date Error</td>
                     </tr>
